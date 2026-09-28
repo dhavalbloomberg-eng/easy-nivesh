@@ -1,0 +1,6 @@
+# Clean URLs (optional trailing slash)
+/new-to-finance  /new-to-finance/index.html  200
+/ipo             /ipo/index.html             200
+/gold-etf        /gold-etf/index.html        200
+/mutual-funds    /mutual-funds/index.html    200
+/equity          /equity/index.html          200

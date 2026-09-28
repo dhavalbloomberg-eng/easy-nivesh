@@ -1,34 +1,50 @@
-# Portfolio View India (Easy Nivesh)
+# Portfolio View India
 
 Educational portfolio mix reference for India. Pick your age, see your split.
 
-**Original:** https://easy-nivesh.netlify.app/
+Live original: https://easy-nivesh.netlify.app/
 
 Static site — HTML, CSS, JS. No build step.
 
-## Pages
+## Deploy (pick one)
 
-- `/` — Overview
-- `/new-to-finance` — Beginner path + age-based mix calculator
-- `/ipo` — IPO grey market premiums
-- `/gold-etf` — Gold rates by city
-- `/mutual-funds` — Category reference
-- `/equity` — 50-30-20 mid/large/small illustration
-- `/login.html` — Auth (Supabase)
+### Netlify
+1. New site → Import this repo  
+2. Publish directory: `/` (leave build command empty)  
+3. Deploy
 
-## Run locally
+### Vercel
+1. Import repo → Framework Preset: **Other**  
+2. Output directory: `.`  
+3. Deploy
+
+### GitHub Pages
+1. Settings → Pages → Source: **Deploy from a branch**  
+2. Branch: `main` / root  
+3. For project URL (`username.github.io/easy-nivesh/`), add a custom domain **or** host at root of a user/org pages site so absolute paths work.
+
+### Cloudflare Pages
+Connect repo → Build command empty → Output directory `/`
+
+## Local
 
 ```bash
 npx serve .
-# or
-python3 -m http.server 8080
+# open http://localhost:3000
 ```
 
-## Deploy
+## Structure
 
-- **GitHub Pages:** Settings → Pages → Deploy from branch `main` / root (or `/docs`)
-- **Netlify / Vercel / Cloudflare Pages:** Connect this repo, publish directory = root
+| Path | Page |
+|------|------|
+| `/` | Overview |
+| `/new-to-finance` | Beginner path + age calculator |
+| `/ipo` | IPO grey market premiums |
+| `/gold-etf` | Gold rates by city |
+| `/mutual-funds` | Category reference |
+| `/equity` | 50-30-20 illustration |
+| `/login.html` | Auth (Supabase) |
 
-Data files in `data/` (IPO, gold) can be refreshed manually or via scheduled jobs.
+Data: `data/ipo.json`, `data/gold.json` (refresh manually or via scheduled job).
 
-Educational only. Not advice. Not SEBI-registered.
+**Educational only. Not advice. Not SEBI-registered.**
