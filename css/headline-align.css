@@ -1,0 +1,13 @@
+/* Headline alignment helpers */
+.headline-block {
+  text-align: center;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.headline-block h1 {
+  margin-bottom: 0.75rem;
+}
+.headline-block p {
+  margin-bottom: 0.5rem;
+}
